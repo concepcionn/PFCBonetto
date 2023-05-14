@@ -5,6 +5,12 @@
   box-sizing: border-box;
   font-family: 'Playfair Display', serif; }
 
+/*import de home */
+.areas h1, .socios h1, .socios .cuadro h2, .revista h1 {
+  text-transform: uppercase;
+  margin: 0.2rem;
+  padding: 0.2rem; }
+
 body {
   background-color: #B4CFB0;
   /* estilos de menu */
@@ -57,50 +63,67 @@ body {
           margin: 6.5rem; } }
       @media screen and (min-width: 1024px) {
         body .descripcion h1 {
-          font-size: 2rem; } }
-      body .descripcion h1 span {
-        display: block; }
-  body section .compromiso {
-    background-color: #567475;
-    background-size: contain;
-    height: auto;
-    overflow: visible;
-    align-items: center;
-    padding: 3em;
-    gap: 20px;
-    font-size: 1em;
+          font-size: 2rem; }
+          body .descripcion h1 span {
+            display: block; } }
+  body section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 50%);
     justify-content: center;
     align-items: center; }
-    body section .compromiso h2 {
-      text-decoration: overline;
-      text-shadow: 10px #222;
-      text-align: left;
-      color: whitesmoke; }
-    body section .compromiso p {
-      text-align: justify;
-      text-decoration: dashed;
-      margin-bottom: 30px;
-      color: whitesmoke;
-      font-size: 1rem; }
+    @media screen and (min-width: 600px) {
+      body section {
+        grid-template-columns: 43% 51%;
+        grid-template-rows: repeat(2, 47%); } }
+    @media screen and (min-width: 1024px) {
+      body section {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 47%); } }
+    body section .compromiso {
+      background-color: #567475;
+      background-size: contain;
+      align-items: center;
+      padding: 3em;
+      gap: 20px;
+      font-size: 1em;
+      justify-content: center;
+      align-items: center; }
+      @media screen and (min-width: 600px) {
+        body section .compromiso {
+          grid-column: span 2; } }
       @media screen and (min-width: 1024px) {
-        body section .compromiso p {
-          font-size: 1.1rem;
-          margin: 2.5rem; } }
-  body section aside {
-    display: flex; }
-    body section aside .imgDos {
+        body section .compromiso {
+          grid-column: span 3; } }
+      body section .compromiso h2 {
+        text-decoration: overline;
+        text-shadow: 10px #222;
+        text-align: left;
+        color: whitesmoke; }
+      body section .compromiso p {
+        text-align: justify;
+        text-decoration: dashed;
+        margin-bottom: 30px;
+        color: whitesmoke;
+        font-size: 1rem; }
+        @media screen and (min-width: 1024px) {
+          body section .compromiso p {
+            font-size: 1.1rem;
+            margin: 2.5rem; } }
+    body section .imgDos {
       display: none; }
       @media screen and (min-width: 600px) {
-        body section aside .imgDos {
+        body section .imgDos {
           display: inline-block;
-          justify-content: center;
-          align-items: center;
-          margin: 1em; }
-          body section aside .imgDos img {
+          grid-column: span 1;
+          text-align: center;
+          margin: 0.2em;
+          align-self: center; }
+          body section .imgDos img {
             justify-content: center;
-            width: auto;
-            height: auto; } }
-    body section aside .visionValores {
+            width: 80%;
+            height: 80%; } }
+    body section .visionValores {
       background-color: #94AF9F;
       margin: 1em;
       padding: 1em;
@@ -109,14 +132,112 @@ body {
       text-align: center;
       justify-content: center;
       border-radius: 5px; }
-      body section aside .visionValores h3 {
+      @media screen and (min-width: 600px) {
+        body section .visionValores {
+          grid-column: span 1; } }
+      @media screen and (min-width: 1024px) {
+        body section .visionValores {
+          grid-column: span 2; } }
+      body section .visionValores h3 {
         color: white;
         margin-right: 3rem;
         text-transform: uppercase;
         text-align: right; }
-      body section aside .visionValores p {
+      body section .visionValores p {
         text-align: justify;
         color: white;
         margin: 2rem;
         gap: 2rem;
         font-size: 1.1em; }
+
+/* import de areas */
+.areas h1, .socios h1, .socios .cuadro h2, .revista h1 {
+  text-transform: uppercase;
+  margin: 0.2rem;
+  padding: 0.2rem; }
+
+/* estilos de areas */
+.areas {
+  justify-content: center;
+  align-items: center; }
+  .areas h1 {
+    text-align: left; }
+    @media screen and (min-width: 1024px) {
+      .areas h1 {
+        margin: 1rem; } }
+  @media screen and (min-width: 600px) {
+    .areas .container {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(6, auto); } }
+  @media screen and (min-width: 600px) {
+    .areas .container div {
+      margin: 10px;
+      padding: 10px;
+      border: 2px solid #DBE4C6;
+      overflow: visible; } }
+  .areas .container div h2 {
+    text-decoration: overline #DBE4C6;
+    text-align: center;
+    margin-top: 15px;
+    color: #083041; }
+    @media screen and (min-width: 600px) {
+      .areas .container div h2 {
+        text-decoration: none;
+        color: #557174; } }
+  .areas .container div p {
+    display: none; }
+    @media screen and (min-width: 600px) {
+      .areas .container div p {
+        display: inline-block;
+        color: #083041; } }
+
+/* import de staff */
+.areas h1, .socios h1, .socios .cuadro h2, .revista h1 {
+  text-transform: uppercase;
+  margin: 0.2rem;
+  padding: 0.2rem; }
+
+/* estilos de staff */
+.socios {
+  text-align: center;
+  padding: 30px;
+  color: #567475; }
+  .socios h1 {
+    text-align: left; }
+  .socios .cuadro {
+    border-style: double;
+    margin: 10px;
+    padding: 10px;
+    color: #083041;
+    justify-content: center;
+    align-items: center; }
+    @media screen and (min-width: 600px) {
+      .socios .cuadro {
+        display: flex; } }
+    @media screen and (min-width: 1024px) {
+      .socios .cuadro {
+        justify-content: space-around; } }
+    .socios .cuadro img {
+      width: 100%;
+      height: 100%;
+      overflow: auto; }
+      @media screen and (min-width: 600px) {
+        .socios .cuadro img {
+          width: 70%;
+          height: 70%; } }
+      @media screen and (min-width: 1024px) {
+        .socios .cuadro img {
+          width: 30%;
+          height: 30%; } }
+
+/* import de revista */
+.areas h1, .socios h1, .socios .cuadro h2, .revista h1 {
+  text-transform: uppercase;
+  margin: 0.2rem;
+  padding: 0.2rem; }
+
+/* estilos de revista */
+.revista {
+  margin: 0.3rem;
+  padding: 0.3rem; }

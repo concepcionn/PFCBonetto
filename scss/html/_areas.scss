@@ -1,0 +1,57 @@
+// import de utilidades
+@import "../utlidades/mq";
+@import "../utlidades/vars";
+@import "../utlidades/mixin";
+@import "../utlidades/extend";
+
+/* estilos de areas */
+.areas{
+    @include center;
+    h1{
+        text-align: left;
+        @extend %mayus;
+
+        @include pc{
+            margin: 1rem;
+        }
+    }
+
+    .container{
+        @include tablet{
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            grid-template-rows: repeat(6, auto);
+        }
+        div{
+            @include tablet{
+                margin: 10px;
+                padding: 10px;
+                border: 2px solid $color-overa;
+                overflow: visible;
+                
+            }
+            h2{
+                text-decoration: overline $color-overa;
+                text-align: center;
+                margin-top: 15px;
+                color: $color-links;
+
+                @include tablet{
+                    text-decoration: none;
+                    color: $color-principal;
+                }
+            }
+
+            p{
+                display: none;
+
+                @include tablet{
+                    display: inline-block;
+                    color: $color-links;
+                }
+            }
+        }
+        
+    }
+    
+}

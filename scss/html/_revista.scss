@@ -1,0 +1,14 @@
+//import de utilidades
+@import "../utlidades/mq";
+@import "../utlidades/vars";
+@import "../utlidades/mixin";
+@import "../utlidades/extend";
+
+/* estilos de revista */
+.revista{
+    margin: 0.3rem;
+    padding: 0.3rem;
+    h1{
+        @extend %mayus;
+    }
+}

@@ -66,24 +66,44 @@ body{
 
             @include pc{
                 font-size: 2rem;
+                span{
+                    display: block;
+                }
             }
-            span{
-                display: block;
-            }
+           
         }
     }
 
     section{
+        @include grid;
+
+        @include tablet{
+            grid-template-columns: 43% 51%;
+            grid-template-rows: repeat(2, 47%);
+        }
+
+        @include pc{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 47%);
+        }
+
         .compromiso{
             background-color: $color-secundario;
             background-size: contain;
-            height: auto;
-            overflow: visible;
             align-items: center;
             padding: 3em;
             gap: 20px;
             font-size: 1em;
             @include center;
+
+            @include tablet{
+                grid-column: span 2;
+            }
+
+            @include pc{
+                grid-column: span 3;
+            }
+
             h2{
                 text-decoration: overline;
                 text-shadow: 10px #222;
@@ -104,45 +124,54 @@ body{
             }
         }
 
-        aside{
-            display: flex;
-            .imgDos{
-                display: none;
+        .imgDos{
+            display: none;
 
-                @include tablet{
-                    display: inline-block;
-                    @include center;
-                    margin: 1em;
-                    img{
-                        justify-content: center;
-                        width: auto;
-                        height: auto;
-                    }
+            @include tablet{
+                display: inline-block;
+                grid-column: span 1;
+                text-align: center;
+                margin: 0.2em;
+                align-self: center;
+                img{
+                    justify-content: center;
+                    width: 80%;
+                    height: 80%;
                 }
             }
+           
+        }
 
-            .visionValores{
-                background-color: $color-vision;
-                margin: 1em;
-                padding: 1em;
-                gap: 20px;
-                font-size: 1em;
-                text-align: center;
-                justify-content: center;
-                border-radius: 5px;
-                h3{
-                    color: white;
-                    margin-right: 3rem;
-                    text-transform: uppercase;
-                    text-align: right;
-                }
-                p{
-                    text-align: justify;
-                    color: white;
-                    margin: 2rem;
-                    gap: 2rem;
-                    font-size: 1.1em;
-                }
+        .visionValores{
+            background-color: $color-vision;
+            margin: 1em;
+            padding: 1em;
+            gap: 20px;
+            font-size: 1em;
+            text-align: center;
+            justify-content: center;
+            border-radius: 5px;
+
+            @include tablet{
+                grid-column: span 1;
+            }
+
+            @include pc{
+                grid-column: span 2;
+            }
+
+            h3{
+                color: white;
+                margin-right: 3rem;
+                text-transform: uppercase;
+                text-align: right;
+            }
+            p{
+                text-align: justify;
+                color: white;
+                margin: 2rem;
+                gap: 2rem;
+                font-size: 1.1em;
             }
         }
     }

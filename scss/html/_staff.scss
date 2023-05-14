@@ -1,0 +1,55 @@
+//import de utilidades
+@import "../utlidades/mq";
+@import "../utlidades/vars";
+@import "../utlidades/mixin";
+@import "../utlidades/extend";
+
+/* estilos de staff */
+.socios{
+    text-align: center;
+    padding: 30px;
+    color: $color-secundario;
+    h1{
+        text-align: left;
+        @extend %mayus;
+    }
+    
+    
+    
+
+    .cuadro{
+        border-style: double;
+        margin: 10px;
+        padding: 10px;
+        color: $color-links;
+        @include center;
+        
+        @include tablet{
+            display: flex;
+        }
+
+        @include pc{
+            justify-content: space-around;
+        }
+        
+        h2{
+            @extend %mayus;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+
+            @include tablet{
+                width: 70%;
+                height: 70%;
+            }
+
+            @include pc{
+                width: 30%;
+                height: 30%; 
+            }
+        }
+    }
+}
