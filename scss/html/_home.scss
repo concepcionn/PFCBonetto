@@ -71,8 +71,80 @@ body{
                 display: block;
             }
         }
+    }
 
-        
+    section{
+        .compromiso{
+            background-color: $color-secundario;
+            background-size: contain;
+            height: auto;
+            overflow: visible;
+            align-items: center;
+            padding: 3em;
+            gap: 20px;
+            font-size: 1em;
+            @include center;
+            h2{
+                text-decoration: overline;
+                text-shadow: 10px #222;
+                text-align: left;
+                color: whitesmoke;
+            }
+            p{
+                text-align: justify;
+                text-decoration: dashed;
+                margin-bottom: 30px;
+                color: whitesmoke;
+                font-size: 1rem;
+
+                @include pc{
+                    font-size: 1.1rem;
+                    margin: 2.5rem;
+                }
+            }
+        }
+
+        aside{
+            display: flex;
+            .imgDos{
+                display: none;
+
+                @include tablet{
+                    display: inline-block;
+                    @include center;
+                    margin: 1em;
+                    img{
+                        justify-content: center;
+                        width: auto;
+                        height: auto;
+                    }
+                }
+            }
+
+            .visionValores{
+                background-color: $color-vision;
+                margin: 1em;
+                padding: 1em;
+                gap: 20px;
+                font-size: 1em;
+                text-align: center;
+                justify-content: center;
+                border-radius: 5px;
+                h3{
+                    color: white;
+                    margin-right: 3rem;
+                    text-transform: uppercase;
+                    text-align: right;
+                }
+                p{
+                    text-align: justify;
+                    color: white;
+                    margin: 2rem;
+                    gap: 2rem;
+                    font-size: 1.1em;
+                }
+            }
+        }
     }
     
 }

@@ -60,3 +60,63 @@ body {
           font-size: 2rem; } }
       body .descripcion h1 span {
         display: block; }
+  body section .compromiso {
+    background-color: #567475;
+    background-size: contain;
+    height: auto;
+    overflow: visible;
+    align-items: center;
+    padding: 3em;
+    gap: 20px;
+    font-size: 1em;
+    justify-content: center;
+    align-items: center; }
+    body section .compromiso h2 {
+      text-decoration: overline;
+      text-shadow: 10px #222;
+      text-align: left;
+      color: whitesmoke; }
+    body section .compromiso p {
+      text-align: justify;
+      text-decoration: dashed;
+      margin-bottom: 30px;
+      color: whitesmoke;
+      font-size: 1rem; }
+      @media screen and (min-width: 1024px) {
+        body section .compromiso p {
+          font-size: 1.1rem;
+          margin: 2.5rem; } }
+  body section aside {
+    display: flex; }
+    body section aside .imgDos {
+      display: none; }
+      @media screen and (min-width: 600px) {
+        body section aside .imgDos {
+          display: inline-block;
+          justify-content: center;
+          align-items: center;
+          margin: 1em; }
+          body section aside .imgDos img {
+            justify-content: center;
+            width: auto;
+            height: auto; } }
+    body section aside .visionValores {
+      background-color: #94AF9F;
+      margin: 1em;
+      padding: 1em;
+      gap: 20px;
+      font-size: 1em;
+      text-align: center;
+      justify-content: center;
+      border-radius: 5px; }
+      body section aside .visionValores h3 {
+        color: white;
+        margin-right: 3rem;
+        text-transform: uppercase;
+        text-align: right; }
+      body section aside .visionValores p {
+        text-align: justify;
+        color: white;
+        margin: 2rem;
+        gap: 2rem;
+        font-size: 1.1em; }
