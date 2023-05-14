@@ -1,0 +1,78 @@
+//import de utilidades
+@import "../utlidades/mq";
+@import "../utlidades/vars";
+@import "../utlidades/mixin";
+@import "../utlidades/extend";
+
+body{
+    background-color: $bg-color;
+    /* estilos de menu */
+    .colorTitle{
+        color: $color-principal;
+    }
+    .colorMenu{
+        color: $color-principal;
+        &:hover{
+            color: $color-principal;
+            border-bottom: 2px solid $color-principal;
+        }
+    }
+
+    /* estilo de titulos principales */
+    h1{
+        color: $color-principal;
+        text-decoration: overline;
+    }
+
+    /* estilos de footer */
+    footer{
+        @include footer;
+        div{
+            a{
+                color: $color-principal;
+                text-decoration: none;
+            }
+        }
+    }
+
+    /* estilos del index */
+    .descripcion{
+        display: flex;
+        @include center;
+        height: 50vh;
+        background: url(../img/martillo.jpg) center;
+        background-size: cover;
+
+        @include tablet{
+            height: 450px;
+        }
+
+        h1{
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.4rem;
+            @include center;
+            color: $bg-color;
+            border: 1px solid $bg-color;
+            box-shadow: 0 0 10px #222;
+            backdrop-filter: blur(15px);
+            margin: 3rem;
+            padding: 1.4em;
+
+            @include tablet{
+                text-transform: uppercase;
+                margin: 6.5rem;
+            }
+
+            @include pc{
+                font-size: 2rem;
+            }
+            span{
+                display: block;
+            }
+        }
+
+        
+    }
+    
+}
