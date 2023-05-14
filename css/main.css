@@ -6,7 +6,7 @@
   font-family: 'Playfair Display', serif; }
 
 /*import de home */
-.areas h1, .socios h1, .socios .cuadro h2, .revista h1 {
+.areas h1, .socios h1, .socios .cuadro h2, .revista h1, .pagInteres h2 {
   text-transform: uppercase;
   margin: 0.2rem;
   padding: 0.2rem; }
@@ -18,22 +18,22 @@ body {
   /* estilos de footer */
   /* estilos del index */ }
   body .colorTitle {
-    color: #557174; }
+    color: #496063; }
   body .colorMenu {
-    color: #557174; }
+    color: #496063; }
     body .colorMenu:hover {
-      color: #557174;
-      border-bottom: 2px solid #557174; }
+      color: #496063;
+      border-bottom: 2px solid #496063; }
   body h1 {
-    color: #557174;
+    color: #496063;
     text-decoration: overline; }
   body footer {
     text-align: center;
     margin: 15px;
     padding: 15px;
-    color: #557174; }
+    color: #496063; }
     body footer div a {
-      color: #557174;
+      color: #496063;
       text-decoration: none; }
   body .descripcion {
     display: flex;
@@ -151,7 +151,7 @@ body {
         font-size: 1.1em; }
 
 /* import de areas */
-.areas h1, .socios h1, .socios .cuadro h2, .revista h1 {
+.areas h1, .socios h1, .socios .cuadro h2, .revista h1, .pagInteres h2 {
   text-transform: uppercase;
   margin: 0.2rem;
   padding: 0.2rem; }
@@ -184,7 +184,7 @@ body {
     @media screen and (min-width: 600px) {
       .areas .container div h2 {
         text-decoration: none;
-        color: #557174; } }
+        color: #496063; } }
   .areas .container div p {
     display: none; }
     @media screen and (min-width: 600px) {
@@ -193,7 +193,7 @@ body {
         color: #083041; } }
 
 /* import de staff */
-.areas h1, .socios h1, .socios .cuadro h2, .revista h1 {
+.areas h1, .socios h1, .socios .cuadro h2, .revista h1, .pagInteres h2 {
   text-transform: uppercase;
   margin: 0.2rem;
   padding: 0.2rem; }
@@ -232,7 +232,7 @@ body {
           height: 30%; } }
 
 /* import de revista */
-.areas h1, .socios h1, .socios .cuadro h2, .revista h1 {
+.areas h1, .socios h1, .socios .cuadro h2, .revista h1, .pagInteres h2 {
   text-transform: uppercase;
   margin: 0.2rem;
   padding: 0.2rem; }
@@ -241,3 +241,27 @@ body {
 .revista {
   margin: 0.3rem;
   padding: 0.3rem; }
+  .revista .contPadre .contHijo .captionColor {
+    color: white;
+    text-decoration: solid;
+    border: 1px solid #9199a0;
+    box-shadow: 0 0 10px #222;
+    backdrop-filter: blur(15px); }
+
+.pagInteres {
+  color: #496063;
+  padding: 0.8rem;
+  display: inline-block; }
+  .pagInteres h2 {
+    text-decoration: overline; }
+  .pagInteres div a {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    color: #083041;
+    text-decoration: none;
+    margin-top: 20px; }
+    .pagInteres div a:visited {
+      color: #3b4740; }
+    @media screen and (min-width: 1024px) {
+      .pagInteres div a:hover {
+        font-weight: bold; } }

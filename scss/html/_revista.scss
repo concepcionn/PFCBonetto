@@ -11,4 +11,43 @@
     h1{
         @extend %mayus;
     }
+
+    .contPadre{
+        .contHijo{
+            .captionColor{
+                color: white;
+                    text-decoration: solid;
+                    border: 1px solid rgb(145, 153, 160);
+                    box-shadow: 0 0 10px #222;
+                    backdrop-filter: blur(15px);
+            }
+        }
+    }
+}
+
+.pagInteres{
+    color: $color-principal;
+    padding: 0.8rem;
+    display: inline-block;
+    h2{
+        text-decoration: overline;
+        @extend %mayus;
+    }
+    div{
+        a{
+            padding: 1rem;
+            margin-bottom: 2rem;
+            color: $color-links;
+            text-decoration: none;
+            margin-top: 20px;
+            &:visited{
+                color: $color-visited;
+            }
+            &:hover{
+               @include pc{
+                    font-weight: bold;
+               } 
+            }
+        }
+    }
 }
