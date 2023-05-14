@@ -1,0 +1,49 @@
+// import de utilidades
+@import "../utlidades/mq";
+@import "../utlidades/vars";
+@import "../utlidades/mixin";
+@import "../utlidades/extend";
+
+/* estilos de contacto */
+.contacto{
+    text-align: center;
+    h1{
+        @extend %mayus;
+        text-align: left;
+        font-size: 1.5rem;
+
+        @include tablet{
+            font-size: 2rem;
+        }
+    }
+
+    form{
+        margin-top: 2rem;
+        .formulario{
+            div{
+                label{
+                    color: $color-links;
+                    display: block;
+                }
+                input{
+                    width: 20rem;
+                    height: 2rem;
+
+                    @include tablet{
+                        width: 40rem;
+                        height: 3rem;
+                    }
+
+                    @include pc{
+                        width: 50rem;
+                        height: 3rem;
+                    }
+                }
+                #consulta{
+                    height: 20rem;
+                }
+            }
+        }
+    }
+
+}

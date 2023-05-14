@@ -6,7 +6,7 @@
   font-family: 'Playfair Display', serif; }
 
 /*import de home */
-.areas h1, .socios h1, .socios .cuadro h2, .revista h1, .pagInteres h2 {
+.areas h1, .socios h1, .socios .cuadro h2, .revista h1, .pagInteres h2, .contacto h1 {
   text-transform: uppercase;
   margin: 0.2rem;
   padding: 0.2rem; }
@@ -124,7 +124,7 @@ body {
             width: 80%;
             height: 80%; } }
     body section .visionValores {
-      background-color: #94AF9F;
+      background-color: #54665b;
       margin: 1em;
       padding: 1em;
       gap: 20px;
@@ -151,7 +151,7 @@ body {
         font-size: 1.1em; }
 
 /* import de areas */
-.areas h1, .socios h1, .socios .cuadro h2, .revista h1, .pagInteres h2 {
+.areas h1, .socios h1, .socios .cuadro h2, .revista h1, .pagInteres h2, .contacto h1 {
   text-transform: uppercase;
   margin: 0.2rem;
   padding: 0.2rem; }
@@ -193,7 +193,7 @@ body {
         color: #083041; } }
 
 /* import de staff */
-.areas h1, .socios h1, .socios .cuadro h2, .revista h1, .pagInteres h2 {
+.areas h1, .socios h1, .socios .cuadro h2, .revista h1, .pagInteres h2, .contacto h1 {
   text-transform: uppercase;
   margin: 0.2rem;
   padding: 0.2rem; }
@@ -232,7 +232,7 @@ body {
           height: 30%; } }
 
 /* import de revista */
-.areas h1, .socios h1, .socios .cuadro h2, .revista h1, .pagInteres h2 {
+.areas h1, .socios h1, .socios .cuadro h2, .revista h1, .pagInteres h2, .contacto h1 {
   text-transform: uppercase;
   margin: 0.2rem;
   padding: 0.2rem; }
@@ -265,3 +265,37 @@ body {
     @media screen and (min-width: 1024px) {
       .pagInteres div a:hover {
         font-weight: bold; } }
+
+/* import de contacto */
+.areas h1, .socios h1, .socios .cuadro h2, .revista h1, .pagInteres h2, .contacto h1 {
+  text-transform: uppercase;
+  margin: 0.2rem;
+  padding: 0.2rem; }
+
+/* estilos de contacto */
+.contacto {
+  text-align: center; }
+  .contacto h1 {
+    text-align: left;
+    font-size: 1.5rem; }
+    @media screen and (min-width: 600px) {
+      .contacto h1 {
+        font-size: 2rem; } }
+  .contacto form {
+    margin-top: 2rem; }
+    .contacto form .formulario div label {
+      color: #083041;
+      display: block; }
+    .contacto form .formulario div input {
+      width: 20rem;
+      height: 2rem; }
+      @media screen and (min-width: 600px) {
+        .contacto form .formulario div input {
+          width: 40rem;
+          height: 3rem; } }
+      @media screen and (min-width: 1024px) {
+        .contacto form .formulario div input {
+          width: 50rem;
+          height: 3rem; } }
+    .contacto form .formulario div #consulta {
+      height: 20rem; }
