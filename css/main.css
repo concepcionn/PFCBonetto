@@ -214,22 +214,25 @@ body {
     align-items: center; }
     @media screen and (min-width: 600px) {
       .socios .cuadro {
-        display: flex; } }
+        display: flex;
+        justify-content: space-between; } }
     @media screen and (min-width: 1024px) {
       .socios .cuadro {
         justify-content: space-around; } }
     .socios .cuadro img {
       width: 100%;
       height: 100%;
-      overflow: auto; }
+      object-fit: cover; }
       @media screen and (min-width: 600px) {
         .socios .cuadro img {
-          width: 70%;
-          height: 70%; } }
+          width: 50%;
+          height: 50%;
+          object-fit: cover; } }
       @media screen and (min-width: 1024px) {
         .socios .cuadro img {
           width: 30%;
-          height: 30%; } }
+          height: 30%;
+          object-fit: cover; } }
 
 /* import de revista */
 .areas h1, .socios h1, .socios .cuadro h2, .revista h1, .pagInteres h2, .contacto h1 {

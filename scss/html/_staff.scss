@@ -26,6 +26,7 @@
         
         @include tablet{
             display: flex;
+            justify-content: space-between;
         }
 
         @include pc{
@@ -39,16 +40,18 @@
         img{
             width: 100%;
             height: 100%;
-            overflow: auto;
+            object-fit: cover;
 
             @include tablet{
-                width: 70%;
-                height: 70%;
+                width: 50%;
+                height: 50%;
+                object-fit: cover;
             }
 
             @include pc{
                 width: 30%;
                 height: 30%; 
+                object-fit: cover;
             }
         }
     }
