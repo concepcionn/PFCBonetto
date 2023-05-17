@@ -18,12 +18,12 @@ body {
   /* estilos de footer */
   /* estilos del index */ }
   body .colorTitle {
-    color: #496063; }
+    color: #273335; }
   body .colorMenu {
-    color: #496063; }
+    color: #273335; }
     body .colorMenu:hover {
-      color: #496063;
-      border-bottom: 2px solid #496063; }
+      color: #273335;
+      border-bottom: 2px solid #273335; }
   body h1 {
     color: #496063;
     text-decoration: overline; }
@@ -31,9 +31,10 @@ body {
     text-align: center;
     margin: 15px;
     padding: 15px;
-    color: #496063; }
+    color: #273335;
+    font-weight: bolder; }
     body footer div a {
-      color: #496063;
+      color: #273335;
       text-decoration: none; }
   body .descripcion {
     display: flex;

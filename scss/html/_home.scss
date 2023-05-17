@@ -7,14 +7,15 @@
 body{
     background-color: $bg-color;
     /* estilos de menu */
+    
     .colorTitle{
-        color: $color-principal;
+        color: $color-menu;
     }
     .colorMenu{
-        color: $color-principal;
+        color: $color-menu;
         &:hover{
-            color: $color-principal;
-            border-bottom: 2px solid $color-principal;
+            color: $color-menu;
+            border-bottom: 2px solid $color-menu;
         }
     }
 
@@ -29,7 +30,7 @@ body{
         @include footer;
         div{
             a{
-                color: $color-principal;
+                color: $color-menu;
                 text-decoration: none;
             }
         }
